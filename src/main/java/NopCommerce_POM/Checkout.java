@@ -46,13 +46,13 @@ public void fillCheckoutForm(){
         clickElement(_continue_agian);
         enterText(_cardholderName, props.getProperty("cardholderName"));
         enterText(_visacardnumber, props.getProperty("visanumber"));
-        selectByValue(_expDate, "5");//expiry date
-        selectByValue(_expyear, "2021");
-        enterText(_cardcode, props.getProperty("cardcode"));
-        clickElement(_continueaftercarddetails);
-        clickElement(_confirm);
-        String thankyou_message=getTextFromContent(_thankyoumessage);
-        Assert.assertEquals(thankyou_message, props.getProperty("shoppingThankYouMessage"));
+        selectByValue(_expDate, "5");//select from dropdown expiry date
+        selectByValue(_expyear, "2021");//select from dropdown expiry year
+        enterText(_cardcode, props.getProperty("cardcode"));//enter card code
+        clickElement(_continueaftercarddetails);//click on continue button
+        clickElement(_confirm);//click on confirm button
+        String thankyou_message=getTextFromContent(_thankyoumessage);//storing thank you message in string variable
+        Assert.assertEquals(thankyou_message, props.getProperty("shoppingThankYouMessage"));//asserting thank you message
 
     }
     public void checkoutAsAGuest(){

@@ -23,7 +23,7 @@ public class TestSuit extends BaseTest {
 
     }
     @Test
-        public void registeredUserShouldBeAbleToReferProductToAFriend(){
+        public void registeredUserShouldBeAbleToReferAProductToAFriend(){
         userShouldBeAbleToRegistersuccessfully();
         homePage.clickOnAProductToReferToAFriend();
         appleMacBookPro.clickonAProduct();
@@ -44,7 +44,7 @@ public class TestSuit extends BaseTest {
         checkout.fillCheckoutForm();
     }
     @Test
-    public void guestUserShouldBeAbleToProductSuccessfully(){
+    public void guestUserShouldBeAbleToBuyProductSuccessfully(){
         homePage.buybooks();
         buyBooks.buybook();
         shoppingCart.checkout();

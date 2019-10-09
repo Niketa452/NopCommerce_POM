@@ -8,7 +8,7 @@ LoadProp props = new LoadProp();
     private By _emailafriend=By.xpath("//input[@value='Email a friend']");
 
 public void clickonAProduct(){
-clickElement(_emailafriend);
+clickElement(_emailafriend);//click on the product Apple Mac Book Pro
 
 
  }

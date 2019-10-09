@@ -24,12 +24,12 @@ public class RegistrationPage extends Utils {
         enterText(_email, props.getProperty("Emailstart") + randomdate() + props.getProperty("Emailend"));//enter email
         enterText(_password, props.getProperty("Password"));//enter passoword
         enterText(_confirmpassword, props.getProperty("Password"));//enter confirm password
-        clickElement(_submitbutton);
-        String actualMessage = getTextFromContent(_registrationmessage);
-        Assert.assertEquals(actualMessage, props.getProperty("expectedRegistrationMessage"));
+        clickElement(_submitbutton);//click on submit button
+        String actualMessage = getTextFromContent(_registrationmessage);//storing message in a string variable
+        Assert.assertEquals(actualMessage, props.getProperty("expectedRegistrationMessage"));//asserting registration completed message
     }
      public void navigateBackToHomePAge(){
-         clickElement(_clickicon);
+         clickElement(_clickicon);//click on nopcommerce icon to navigate back to homepage
      }
      }
 

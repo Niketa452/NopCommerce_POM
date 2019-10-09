@@ -16,8 +16,8 @@ public class ShoppingCart extends Utils {
     public void checkout() {
         clickElement(_terms);//click on terms and condition
         clickElement(_checkoutbutton);//click on checkout button
-        String bookname=getAttributefromWebelement(_gettext, "title");
-        Assert.assertEquals(bookname, props.getProperty("shoppingcartproductassert"));
+        String bookname=getAttributefromWebelement(_gettext, "title");//storing book title in a string variable
+        Assert.assertEquals(bookname, props.getProperty("shoppingcartproductassert"));//asserting product in the cart is same as chosen
 
 
 

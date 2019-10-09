@@ -35,7 +35,7 @@ public class HomePage extends Utils {
         clickElement(_clickProduct);//click on Apple Macbook pro to refer to a friend
     }
     public void buybooks(){
-    clickElement(_clickbooks);
+    clickElement(_clickbooks);//click on Books category button, so that can be navigated to books page
 
     }
 }
